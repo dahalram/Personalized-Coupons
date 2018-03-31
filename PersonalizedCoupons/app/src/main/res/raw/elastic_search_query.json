@@ -1,0 +1,33 @@
+{
+  "query":{
+    "bool": {
+      "must": [
+        {
+          "range" : {
+            "start_date" : {
+              "lte" : "now+1w"
+            }
+          }
+        },
+        {
+          "range" : {
+            "end_date" : {
+              "gte" : "now+5m/m"
+            }
+          }
+        }
+      ],
+      "filter": {
+        "geo_shape": {
+          "shape": {
+            "shape": {
+              "type": "point",
+              "coordinates" : [27.741125, 85.331325]
+            },
+            "relation": "contains"
+          }
+        }
+      }
+    }
+  }
+}
