@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BankCheckActivity">
+
+    <EditText
+        android:id="@+id/etChooseBank"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Choose Bank"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btBofA"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="76dp"
+        android:text="Bank of America" />
+
+    <Button
+        android:id="@+id/btWellsFargo"
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btBofA"
+        android:layout_marginTop="136dp"
+        android:text="Wells Fargo" />
+</RelativeLayout>
