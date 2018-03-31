@@ -27,9 +27,7 @@ public class UserAreaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_area);
 
-        BlurLayout sampleLayout = (BlurLayout)findViewById(R.id.sample);
-        View hover = LayoutInflater.from(this).inflate(R.layout.hover_view, null);
-        sampleLayout.setHoverView(hover);
+
 
         mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler);
 

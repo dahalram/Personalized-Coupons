@@ -8,6 +8,8 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.daimajia.androidviewhover.BlurLayout;
+
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     private String[] mDataset;
 
@@ -17,13 +19,15 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     public static class ViewHolder extends RecyclerView.ViewHolder {
         final TextView mIdView;
         final ImageView imageView;
-        final RelativeLayout viewForeground;
+        final BlurLayout blurLayout;
+        final View hover;
 
         ViewHolder(View view) {
             super(view);
             mIdView = (TextView) view.findViewById(R.id.coupon_title);
             imageView = view.findViewById(R.id.id_image);
-            viewForeground = view.findViewById(R.id.view_foreground);
+            blurLayout = view.findViewById(R.id.sample);
+            hover = LayoutInflater.from(view.getContext()).inflate(R.layout.hover_view, null);
         }
     }
 
@@ -41,6 +45,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                 .inflate(R.layout.my_card_view, parent, false);
         ViewHolder vh = new ViewHolder(v);
         return vh;
+
     }
 
     // Replace the contents of a view (invoked by the layout manager)
@@ -49,6 +54,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
         holder.mIdView.setText(mDataset[position]);
+
+        holder.blurLayout.setHoverView(holder.hover);
 
     }
 
