@@ -2,16 +2,12 @@ package com.example.rambo.personalizedcoupons;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class UserAreaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        Button b = findViewById(R.id.button);
-
+        setContentView(R.layout.activity_user_area);
     }
 }
