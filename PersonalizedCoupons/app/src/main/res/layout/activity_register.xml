@@ -64,16 +64,17 @@
 
                 <Button
                     android:id="@+id/btRegister"
-                    android:layout_width="wrap_content"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/etPassword"
                     android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
                     android:background="@android:color/holo_blue_dark"
                     android:text="Register"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@android:color/background_light"
-                    android:textSize="18sp"
-                    style="?android:attr/borderlessButtonStyle"/>
+                    android:textSize="18sp" />
 
                 <Space
                     android:layout_width="match_parent"

@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class BankCheckActivity extends AppCompatActivity {
 
@@ -13,8 +14,8 @@ public class BankCheckActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bank_login);
 
-        final Button btBofA = (Button) findViewById(R.id.btBofA);
-        final Button btWellsFargo = (Button) findViewById(R.id.btWellsFargo);
+        final ImageButton btBofA = findViewById(R.id.btBofa);
+        final ImageButton btWellsFargo = findViewById(R.id.btWellsFargo);
 
         btBofA.setOnClickListener(new View.OnClickListener() {
             @Override
