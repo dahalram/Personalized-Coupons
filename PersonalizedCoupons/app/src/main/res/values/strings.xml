@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Personalized Coupons</string>
+    <string name="title_activity_bank_login">BankLoginActivity</string>
 </resources>
