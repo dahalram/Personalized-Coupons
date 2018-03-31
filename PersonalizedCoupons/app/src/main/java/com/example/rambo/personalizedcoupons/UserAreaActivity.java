@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.SearchView;
 import android.widget.TextView;
 
 import com.daimajia.androidanimations.library.Techniques;
@@ -20,6 +21,8 @@ public class UserAreaActivity extends AppCompatActivity {
     RecyclerView mRecyclerView;
     LinearLayoutManager mLayoutManager;
     MyAdapter mAdapter;
+
+    SearchView searchView;
 
 
     @Override
@@ -43,6 +46,9 @@ public class UserAreaActivity extends AppCompatActivity {
         String[] myDataset = {"a", "b", "c"};
         mAdapter = new MyAdapter(myDataset);
         mRecyclerView.setAdapter(mAdapter);
+
+//        searchView = findViewById(R.id.searchView);
+//        searchView.setMaxWidth(Integer.MAX_VALUE);
     }
 
 

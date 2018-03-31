@@ -56,6 +56,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         holder.mIdView.setText(mDataset[position]);
 
         holder.blurLayout.setHoverView(holder.hover);
+        holder.blurLayout.enableZoomBackground(true);
+        holder.blurLayout.setBlurDuration(1200);
 
     }
 
