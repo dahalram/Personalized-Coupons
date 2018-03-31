@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -25,7 +24,7 @@ public class RegisterActivity extends AppCompatActivity {
         btRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent registerIntent = new Intent(RegisterActivity.this, BankLoginActivity.class);
+                Intent registerIntent = new Intent(RegisterActivity.this, BankCheckActivity.class);
                 RegisterActivity.this.startActivity(registerIntent);
             }
         });

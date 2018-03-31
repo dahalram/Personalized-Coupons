@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class BankLoginActivity extends AppCompatActivity {
+public class BankCheckActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,8 +19,8 @@ public class BankLoginActivity extends AppCompatActivity {
         btBofA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent bofaIntent = new Intent(BankLoginActivity.this, BankInfoLoginActivity.class);
-                BankLoginActivity.this.startActivity(bofaIntent);
+                Intent bofaIntent = new Intent(BankCheckActivity.this, BankInfoLoginActivity.class);
+                BankCheckActivity.this.startActivity(bofaIntent);
             }
         });
     }
